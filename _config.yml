@@ -1,5 +1,5 @@
 # Base configs
-baseurl: "https://beta.awalkaday.art"
+baseurl: "https://awalkaday.art"
 image_fulls_loc: "/images/fulls"
 image_thumbs_loc: "/images/thumbs"
 google_analytics: ""
@@ -20,5 +20,5 @@ social_urls:
   github: "https://github.com/awalkaday"
 
 # Links conditions
-url: https://beta.awalkaday.art
-enforce_ssl: beta.awalkaday.art
+url: https://awalkaday.art
+enforce_ssl: awalkaday.art
