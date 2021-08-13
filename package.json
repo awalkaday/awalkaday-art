@@ -31,7 +31,7 @@
     "gulp-gm": "0.0.9",
     "gulp-image-resize": "^0.13.1",
     "gulp-rename": "^1.2.2",
-    "gulp-sass": "^3.1.0",
+    "gulp-sass": "^5.0.0",
     "gulp-uglify": "^3.0.0",
     "lodash.template": "^4.5.0",
     "node-sass": "^6.0.1"
