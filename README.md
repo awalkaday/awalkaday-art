@@ -1,7 +1,7 @@
 # WALK≡DAY Visual Arts Gallery
 This is the __code repository__ of a _Jekyll_-based static web app mainly built in _JavaScript_ for running an online art gallery.  
 
-<img src="https://raw.githubusercontent.com/daqhris/awalkaday/master/assets/icons/awalkaday_art-web_overview.PNG" alt="website overview demo">  
+<img src="https://raw.githubusercontent.com/awalkaday/awalkaday-art/master/assets/icons/awalkaday_art-web_overview.PNG" alt="website overview demo">  
 
 ## Highlights
 1. __Easy__ setup and __free__ online art gallery web app.
@@ -22,7 +22,7 @@ If you have basic knoweldge about web development and you like photography, then
 
 And, of course, you can modify the words that are shown on the landing page's footer in `_config.yml` file as well as few other settings like your Google Analytics, Social Media icons, Contact Form, etc.  
 
-<img src="https://raw.githubusercontent.com/daqhris/awalkaday/master/assets/icons/awalkaday_art-web_footer.PNG" alt="website footer demo">  
+<img src="https://raw.githubusercontent.com/awalkaday/awalkaday-art/master/assets/icons/awalkaday_art-web_footer.PNG" alt="website footer demo">  
  
 ## Tips
 The website is set up as a [npm](https://www.npmjs.com) package with [gulp](https://gulpjs.com/) to automate image resizing
@@ -39,13 +39,13 @@ You can just do the following before you push your images to GitHub.
 ## Credits
 GitHub repo __forked__ from: [rampatra/photography](https://github.com/rampatra/photography) — Enhanced for [Jekyll](https://jekyllrb.com/) by [Ram  Patra](https://github.com/rampatra) — Code reused under [GPL-3.0 License](https://raw.githubusercontent.com/rampatra/photography/master/LICENSE).   
 __Template__: [Multiverse by HTML5 UP](https://html5up.net/multiverse) — Web designer and developer: [ajlkn](https://aj.lkn.io/).  
-__Fonts__: [Source Sans 3](https://github.com/daqhris/daqhris.github.io/blob/master/style/font/SourceSans3-Regular.ttf) — Used under: [SIL Open Font License](https://raw.githubusercontent.com/daqhris/daqhris.github.io/master/style/font/license/OFL.txt).  
+__Fonts__: [Source Sans 3](https://github.com/awalkaday/awalkaday-art/blob/master/assets/fonts/SourceSans3-Regular.ttf) — Used under: [SIL Open Font License](https://raw.githubusercontent.com/daqhris/daqhris.github.io/master/style/font/license/OFL.txt).  
 Brand __icons__ made from: [OpenMoji](https://openmoji.org/about/) — Remixed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/legalcode).  
 
 ## Copyrights  
-__Code__ License: [European Union Public License 1.2](https://raw.githubusercontent.com/daqhris/awalkaday/master/LICENSE).    
+__Code__ License: [European Union Public License 1.2](https://raw.githubusercontent.com/awalkaday/awalkaday-art/master/LICENSE).    
 __Content__ Legal Rights: [Creative Commons Public License: Attribution 4.0 International (CC BY-4.0)](https://creativecommons.org/licenses/by/4.0/legalcode).     
 __Site__ owner & developer: [Chris-Armel](https://daqhris.com) [(@daqhris)](https://github.com/daqhris).  
 
-<img src="https://raw.githubusercontent.com/daqhris/awalkaday/master/assets/icons/awalkaday-logo-1x1.png" alt="website logo" width="300" height="300">  
+<img src="https://raw.githubusercontent.com/awalkaday/awalkaday-art/master/assets/icons/awalkaday-logo-1x1.png" alt="website logo" width="300" height="300">  
 
