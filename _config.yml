@@ -3,22 +3,23 @@ baseurl: "https://awalkaday.art"
 image_fulls_loc: "/images/fulls"
 image_thumbs_loc: "/images/thumbs"
 google_analytics: ""
-
 # UI configs
 title: "WALK&equiv;DAY Visual Arts Gallery"
 subtitle: "The sun is up and running, everyday, for you. Let's take #awalkaday for a healthier life!"
 author: "2017-2021 Chris-Armel"
 header:
  title: "WALK&equiv;DAY"
- subtitle: "Visual Arts Gallery"
+ subtitle: ""
 footer:
  name: "WALK&equiv;DAY Visual Arts Gallery"
- bio: "WALK&equiv;DAY is a visual arts project that curates black-and-white images to inspire you to get up and go for a walk every day. You may also find our photo collections regularly shared on Instagram with #awalkaday."
+ bio: "WALK&equiv;DAY is a digital art project that curates black-and-white images as a source of inspiration for walking every day.<br>
+      The gallery's collection is made of visual artworks created by @daqhris 
+      which are regularly shared on Instagram with #awalkaday and 
+      are soon-to-be sold on the Ethereum blockchain as part of the awalkaday.art NFTs collection."
 web_design: "daqhris.com"
 social_urls:
   instagram: "https://www.instagram.com/walk.day"
   github: "https://github.com/awalkaday"
-
 # Links conditions
 url: https://awalkaday.art
 enforce_ssl: awalkaday.art
