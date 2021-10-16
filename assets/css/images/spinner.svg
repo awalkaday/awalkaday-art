@@ -2,8 +2,8 @@
 	<style>
 		circle {
 			fill: transparent;
-			stroke: #fff;
-			stroke-width: 1.5px;
+			stroke: #000;
+			stroke-width: 0.5rem;
 		}
 	</style>
 	<defs>
