@@ -29,7 +29,7 @@ The website is set up as a [npm](https://www.npmjs.com) package with [gulp](http
 You can just do the following before you push your images to GitHub:
 
 1. Fork and then clone the project to your computer.
-2. Go inside the project's local folder `$ cd awalkaday`.
+2. Go inside the project's local folder `$ cd awalkaday-art`.
 3. Install all dependencies by running `$ npm install`. This step might take some time while automatically downloading and installing recent versions of [NodeJS](https://nodejs.org/en/), [ImageMagick](https://imagemagick.org/index.php), [Git](https://git-scm.com/), [Python](https://www.python.org/), Build Tools for your IDE like [Node.js for Visual Studio](https://visualstudio.microsoft.com/vs/features/node-js/) and other required dependencies.
 4. Copy all your pictures (if possible in JPG file format, the largest size available, straight from your camera or original files) and put them inside `images` directory.
 5. Run `$ gulp` on the command-line inside the git folder in order to resize the images and to generate thumbnails.
