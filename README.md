@@ -43,7 +43,7 @@ __Icons__ made from: [OpenMoji](https://openmoji.org/about/) — Remixed under [
 
 ## Copyrights
 __Code__ License: [European Union Public License 1.2](https://raw.githubusercontent.com/awalkaday/awalkaday-art/master/LICENSE).    
-__Content__ Legal Rights: [Creative Commons Public License: Attribution 4.0 International (CC BY-4.0)](https://creativecommons.org/licenses/by/4.0/legalcode).     
+__Content__ Legal Rights: [Creative Commons Zero License: Public Domain (CC0 1.0)](https://creativecommons.org/publicdomain/zero/1.0/legalcode).  
 __Website__ owner & developer: [Chris-Armel](https://daqhris.com) [(@daqhris)](https://github.com/daqhris).  
 
 <img src="https://raw.githubusercontent.com/awalkaday/awalkaday-art/master/assets/icons/awalkaday-logo-1x1.png" alt="website logo" width="200" height="200">  
