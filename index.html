@@ -35,7 +35,7 @@ layout: default
         <div class="inner split">
             <div>
                 <section>
-                    <h2><a a href="/" class="icon fa-info-circle" aria-hidden="true"> {{ site.footer.name }}</a></h2>
+                    <h2><a a href="/" class="icon fa-image" aria-hidden="true"> {{ site.footer.name }}</a></h2>
                     <p>{{ site.footer.bio }}</p>
                     <button>
                         <a href="https://about.awalkaday.art" title="FAQ : About | WALK&equiv;DAY" class="special" target="_blank">Learn More</a>
@@ -52,28 +52,28 @@ layout: default
                 </section>
 
                 <section>
-                    <h4><a href="https://www.instagram.com/walk.day" class="icon fa-handshake-o" aria-hidden="true"> Social</a></h4>
+                    <h4><a href="https://www.instagram.com/walk.day" class="icon fa-handshake-o" aria-hidden="true" target="_blank"> Social</a></h4>
                     <ul class="icons">
                             <li>
-                                <a href="mailto:contact@awalkaday.art" class="icon fa-envelope" aria-hidden="true" title="Contact us by E-Mail"></a>
+                                <a href="mailto:contact@awalkaday.art" class="icon fa-envelope" aria-hidden="true" title="Contact us by E-Mail" target="_blank"></a>
                             </li>
                         {% if site.social_urls.instagram %}
                             <li>
-                                <a href="{{ site.social_urls.instagram }}" class="icon fa-instagram" aria-hidden="true" title="Discover our Instagram feed">
+                                <a href="{{ site.social_urls.instagram }}" class="icon fa-instagram" aria-hidden="true" title="Discover our Instagram feed" target="_blank">
                                     <span class="label"></span>
                                 </a>
                             </li>
                         {% endif %}
                         {% if site.social_urls.twitter %}
                         <li>
-                            <a href="{{ site.social_urls.twitter }}" class="icon fa-twitter" aria-hidden="true" title="Subscribe to our feed on Twitter">
+                            <a href="{{ site.social_urls.twitter }}" class="icon fa-twitter" aria-hidden="true" title="Subscribe to our feed on Twitter" target="_blank">
                                 <span class="label"></span>
                             </a>
                         </li>
                         {% endif %}
                         {% if site.social_urls.github %}
                             <li>
-                                <a href="{{ site.social_urls.github }}" class="icon fa-github" aria-hidden="true" title="Visit our tech lab on GitHub">
+                                <a href="{{ site.social_urls.github }}" class="icon fa-github" aria-hidden="true" title="Visit our tech lab on GitHub" target="_blank">
                                     <span class="label"></span>
                                 </a>
                             </li>
@@ -83,12 +83,12 @@ layout: default
 
                 <section class="copyright">
                 <h4><a href="/privacy.html" title="Legal and Privacy Statement" class="icon fa-balance-scale" aria-hidden="true"> Legal</a></h4>
-                <p> Copyright: <a href="https://photo.daqhris.com/" title="Instagram account of awalkaday.art project's author" target="_blank">&copy; {{ site.author }}</a><br>
+                <p> Copyright: &copy; {{ site.author }}<br>
                     Coding & Design: <a href="https://daqhris.com" title="Home | Chris A. Iradukunda" target="_blank">{{ site.web_design }}</a><br>
-                    Licenses: Content <a href="https://creativecommons.org/publicdomain/zero/1.0/legalcode" title="Creative Commons 1.0 Universal License">Public Domain (CC0 1.0)</a> / 
+                    Licenses: Content <a href="https://creativecommons.org/publicdomain/zero/1.0/legalcode" title="Creative Commons 1.0 Universal License" target="_blank">Public Domain (CC0 1.0)</a> / 
                         Code <a href="https://joinup.ec.europa.eu/collection/eupl/eupl-text-eupl-12" title="European Union Public Licence" target="_blank">EUPL-1.2</a><br>
                     Open-Source: <a href="https://github.com/daqhris/awalkaday" title="Free and open-source web application code" target="_blank">Code Repository</a><br>
-                    Usage Policy: <a href="https://awalkaday.art/privacy" title="Terms of Use, Privacy Policy and Data Collection" target="_blank">Terms & Privacy</a><br>
+                    Usage Policy: <a href="https://awalkaday.art/privacy" title="Terms of Use, Privacy Policy and Data Collection">Terms & Privacy</a><br>
                     Beta/Test Website: <a href="https://beta.awalkaday.art" title="Beta version of the website" target="_blank">https://beta.awalkaday.art</a>
                     </p>
                 </section>
