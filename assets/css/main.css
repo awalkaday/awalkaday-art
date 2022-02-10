@@ -476,237 +476,6 @@
 			opacity: 0.35;
 		}
 
-/* Form */
-
-	form {
-		margin: 0 0 2em 0;
-	}
-
-		form .field {
-			margin: 0 0 1.3em 0;
-		}
-
-			form .field.half {
-				float: left;
-				padding: 0 0 0 0.65em;
-				width: 50%;
-			}
-
-				form .field.half.first {
-					padding: 0 0.65em 0 0;
-				}
-
-		form > .actions {
-			margin: 1.5em 0 0 0 !important;
-		}
-
-		@media screen and (max-width: 736px) {
-
-			form .field.half {
-				float: none;
-				padding: 0;
-				width: 100%;
-			}
-
-				form .field.half.first {
-					padding: 0;
-				}
-
-		}
-
-	label {
-		color: #ffffff;
-		display: block;
-		font-size: 0.9em;
-		font-weight: 300;
-		margin: 0 0 1em 0;
-	}
-
-	input[type="text"],
-	input[type="password"],
-	input[type="email"],
-	input[type="tel"],
-	input[type="search"],
-	input[type="url"],
-	select,
-	textarea {
-		-moz-appearance: none;
-		-webkit-appearance: none;
-		-ms-appearance: none;
-		appearance: none;
-		background: #34363b;
-		border: 0;
-		border-radius: 0;
-		color: #a0a0a1;
-		display: block;
-		outline: 0;
-		padding: 0 1em;
-		text-decoration: none;
-		width: 100%;
-	}
-
-		input[type="text"]:invalid,
-		input[type="password"]:invalid,
-		input[type="email"]:invalid,
-		input[type="tel"]:invalid,
-		input[type="search"]:invalid,
-		input[type="url"]:invalid,
-		select:invalid,
-		textarea:invalid {
-			box-shadow: none;
-		}
-
-		input[type="text"]:focus,
-		input[type="password"]:focus,
-		input[type="email"]:focus,
-		input[type="tel"]:focus,
-		input[type="search"]:focus,
-		input[type="url"]:focus,
-		select:focus,
-		textarea:focus {
-			box-shadow: inset 0 0 0 2px #34a58e;
-		}
-
-	.select-wrapper {
-		text-decoration: none;
-		display: block;
-		position: relative;
-	}
-
-		.select-wrapper:before {
-			-moz-osx-font-smoothing: grayscale;
-			-webkit-font-smoothing: antialiased;
-			font-family: FontAwesome;
-			font-style: normal;
-			font-weight: normal;
-			text-transform: none !important;
-		}
-
-		.select-wrapper:before {
-			color: #36383c;
-			content: '\f078';
-			display: block;
-			height: 2.75em;
-			line-height: 2.75em;
-			pointer-events: none;
-			position: absolute;
-			right: 0;
-			text-align: center;
-			top: 0;
-			width: 2.75em;
-		}
-
-		.select-wrapper select::-ms-expand {
-			display: none;
-		}
-
-	input[type="text"],
-	input[type="password"],
-	input[type="email"],
-	input[type="tel"],
-	input[type="search"],
-	input[type="url"],
-	select {
-		height: 2.75em;
-	}
-
-	textarea {
-		padding: 0.75em 1em;
-	}
-
-	input[type="checkbox"],
-	input[type="radio"] {
-		-moz-appearance: none;
-		-webkit-appearance: none;
-		-ms-appearance: none;
-		appearance: none;
-		display: block;
-		float: left;
-		margin-right: -2em;
-		opacity: 0;
-		width: 1em;
-		z-index: -1;
-	}
-
-		input[type="checkbox"] + label,
-		input[type="radio"] + label {
-			text-decoration: none;
-			color: #a0a0a1;
-			cursor: pointer;
-			display: inline-block;
-			font-size: 1em;
-			font-weight: 300;
-			padding-left: 2.4em;
-			padding-right: 0.75em;
-			position: relative;
-		}
-
-			input[type="checkbox"] + label:before,
-			input[type="radio"] + label:before {
-				-moz-osx-font-smoothing: grayscale;
-				-webkit-font-smoothing: antialiased;
-				font-family: FontAwesome;
-				font-style: normal;
-				font-weight: normal;
-				text-transform: none !important;
-			}
-
-			input[type="checkbox"] + label:before,
-			input[type="radio"] + label:before {
-				background: #34363b;
-				content: '';
-				display: inline-block;
-				height: 1.65em;
-				left: 0;
-				line-height: 1.58125em;
-				position: absolute;
-				text-align: center;
-				top: 0;
-				width: 1.65em;
-			}
-
-		input[type="checkbox"]:checked + label:before,
-		input[type="radio"]:checked + label:before {
-			background: #34a58e;
-			border-color: #34a58e;
-			color: #ffffff;
-			content: '\f00c';
-		}
-
-		input[type="checkbox"]:focus + label:before,
-		input[type="radio"]:focus + label:before {
-			box-shadow: 0 0 0 2px #34a58e;
-		}
-
-	input[type="radio"] + label:before {
-		border-radius: 100%;
-	}
-
-	::-webkit-input-placeholder {
-		color: #707071 !important;
-		opacity: 1.0;
-	}
-
-	:-moz-placeholder {
-		color: #707071 !important;
-		opacity: 1.0;
-	}
-
-	::-moz-placeholder {
-		color: #707071 !important;
-		opacity: 1.0;
-	}
-
-	:-ms-input-placeholder {
-		color: #707071 !important;
-		opacity: 1.0;
-	}
-
-	.formerize-placeholder {
-		color: #707071 !important;
-		opacity: 1.0;
-	}
-
 /* Icon */
 
 	.icon {
@@ -1018,7 +787,6 @@
 
 				.panel > .inner.split > div {
 					margin-left: 4em;
-					width: 50%;
 				}
 
 				.panel > .inner.split > :first-child {
@@ -1818,7 +1586,6 @@
 				transition-delay: 1.625s;
 				height: calc(40vh - 2em);
 				min-height: 20em;
-				width: 50%;
 			}
 
 				#main .thumb:nth-child(1) {
@@ -1874,7 +1641,6 @@
 				transition-delay: 2.075s;
 				height: calc(28.57143vh - 1.33333em);
 				min-height: 18em;
-				width: 50%;
 			}
 
 				#main .thumb:nth-child(1) {
