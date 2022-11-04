@@ -1,7 +1,7 @@
 # WALK≡DAY Visual Arts Gallery
 This is the __code repository__ of a web app mainly built in _JavaScript_ that is used to run a digital art gallery.  
 
-<img src="https://raw.githubusercontent.com/awalkaday/awalkaday-art/master/assets/icons/awalkaday_art-web_overview.PNG" alt="website overview demo">  
+<img src="https://raw.githubusercontent.com/awalkaday/awalkaday-art/master/assets/icons/awalkaday_art-web_overview.png" alt="website bottom page screenshot">  
 
 ## Highlights
 1. __Easy__ setup and __free__ digital art gallery web app.
