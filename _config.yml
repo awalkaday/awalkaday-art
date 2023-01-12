@@ -12,10 +12,11 @@ header:
  subtitle: "by daqhris"
 footer:
  name: "WALK&equiv;DAY Visual Arts Gallery"
- bio: "WALK&equiv;DAY is a digital art gallery that curates black-and-white visual artworks in order to inspire anyone to get up and go for a walk every day.<br>
- Every artwork is minted as a non-fungible token as part of the awalkaday.art NFT Collection on the Ethereum blockchain.<br>
- The collection contains uniquely elegant artworks made of nature, landscape and street photography."
-web_design: "daqhris.com"
+ bio: "This digital art gallery curates black-and-white visual artworks that inspire to step outdoors and enjoy a walk.<br>
+ The artworks belong to the awalkaday.art NFT Collection that is minted by Chris-Armel (daqhris.eth) on the Ethereum blockchain.<br>
+ The art collection contains unique pieces of nature, landscape and architecture photography.<br> 
+ The monochrome photographs were captured during long walks, in diverse locations, all around Belgium (Europe)."
+web_design: "Chris-Armel (daqhris)"
 social_urls:
   instagram: "https://www.instagram.com/walk.day"
   github: "https://github.com/awalkaday"
