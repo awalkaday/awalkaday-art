@@ -133,10 +133,10 @@
 		-ms-overflow-style: scrollbar;
 	}
 
-	@media screen and (max-width: 480px) {
+	@media screen and (max-width: 360px) {
 
 		html, body {
-			min-width: 320px;
+			min-width: 240px;
 		}
 
 	}
@@ -623,7 +623,7 @@
 						padding: 0 0 0 0.5em;
 					}
 
-			@media screen and (max-width: 480px) {
+			@media screen and (max-width: 360px) {
 
 				ul.actions {
 					margin: 0 0 2em 0;
@@ -1575,7 +1575,7 @@
 				}
 			}
 
-		@media screen and (max-width: 480px) {
+		@media screen and (max-width: 360px) {
 
 			#main .thumb {
 				-moz-transition-delay: 1.175s;
