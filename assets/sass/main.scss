@@ -16,7 +16,7 @@
 		large: '(max-width: 1280px)',
 		medium: '(max-width: 980px)',
 		small: '(max-width: 600px)',
-		xsmall: '(max-width: 360px)'
+		xsmall: '(max-width: 320px)'
 	));
 
 	@include skel-layout((
