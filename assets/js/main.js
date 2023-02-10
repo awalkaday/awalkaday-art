@@ -212,52 +212,44 @@
 
 				});
 
-		// Main.
+			// Main.
 			var $main = $('#main');
 
 			// Thumbs.
 			$main.children('.thumb').each(function() {
+			var $this = $(this),
+				$image = $this.find('.image'),
+				$image_img = $image.children('img'),
+				randomPos;
 
-				var $this = $(this),
-				  $image = $this.find('.image'), $image_img = $image.children('img'),
-				  x,
-				  randomPos;
+			// No image? Bail.
+			if ($image.length == 0) return;
 
-				// Shuffle the elements
-				$main.children('.thumb').sort(function() {
-					return Math.round(Math.random())-0.5;
-				}).appendTo($main);
+			// Set random background position.
+			randomPos = Math.floor(Math.random() * 100);
+			$image.css('background-position', `${randomPos}%`);
 
-			  
-				// No image? Bail.
-				if ($image.length == 0)
-				  return;
-			  
-				// Image.
-				// This sets the background of the "image" <span> to the image pointed to by its child
-				// <img> (which is then hidden). Gives us way more flexibility.
-			  
-				// Set random background position.
-				randomPos = Math.floor(Math.random() * 100);
-				$image.css('background-position', `${randomPos}%`);
-			  
-				// Set background.
-				$image.css('background-image', 'url(' + $image_img.attr('src') + ')');
-			  
-				// Hide original img.
-				$image_img.hide();		  
+			// Set background.
+			$image.css('background-image', 'url(' + $image_img.attr('src') + ')');
 
-					// Hack: IE<11 doesn't support pointer-events, which means clicks to our image never
-					// land as they're blocked by the thumbnail's caption overlay gradient. This just forces
-					// the click through to the image.
-						if (skel.vars.IEVersion < 11)
-							$this
-								.css('cursor', 'pointer')
-								.on('click', function() {
-									$image.trigger('click');
-								});
+			// Hide original img.
+			$image_img.hide();
 
+			// Hack: IE<11 doesn't support pointer-events, which means clicks to our image never
+			// land as they're blocked by the thumbnail's caption overlay gradient. This just forces
+			// the click through to the image.
+			if (skel.vars.IEVersion < 11) {
+				$this.css('cursor', 'pointer');
+				$this.click(function() {
+				$image.trigger('click');
 				});
+			}
+			});
+
+			// Shuffle the elements.
+			$main.children('.thumb').sort(function() {
+			return Math.random() - 0.5;
+			}).appendTo($main);
 
 			// Poptrox.
 				$main.poptrox({
