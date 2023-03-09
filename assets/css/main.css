@@ -170,7 +170,7 @@
 /* Type */
 
 	body, input, select, textarea {
-		color: #a0a0a1;
+		color: #f0f0f0;
 		font-family: "SourceSans", sans-serif;
 		font-size: 1rem;
 		font-weight: 300;
@@ -196,7 +196,7 @@
 		text-decoration: none;
 	}
 
-		a:hover {
+	a:hover {
 			border-bottom-color: transparent;
 			color: #34a58e !important;
 		}
@@ -345,77 +345,77 @@
 	input[type="reset"],
 	input[type="button"],
 	button,
-	.button {
-	-moz-appearance: none;
-	-webkit-appearance: none;
-	-ms-appearance: none;
-	appearance: none;
-	-moz-transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
-	-webkit-transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
-	-ms-transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
-	transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
-	background-color: #F0F0F0;
-	border: 0;
-	border-radius: 0;
-	box-shadow: inset 0 0 0 2px #36383c;
-	cursor: pointer;
-	display: inline-block;
-	font-size: 0.9em;
-	font-weight: 300;
-	height: 3.05556em;
-	letter-spacing: 0.1em;
-	line-height: 3.05556em;
-	padding: 0 2.5em;
-	text-align: center;
-	text-decoration: none;
-	text-transform: uppercase;
-	white-space: nowrap;
-	color: #fff; /* set text color to white */
-	}
+		.button {
+		-moz-appearance: none;
+		-webkit-appearance: none;
+		-ms-appearance: none;
+		appearance: none;
+		-moz-transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
+		-webkit-transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
+		-ms-transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
+		transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
+		background-color: #F0F0F0;
+		border: 0;
+		border-radius: 0;
+		box-shadow: inset 0 0 0 2px #36383c;
+		cursor: pointer;
+		display: inline-block;
+		font-size: 0.9em;
+		font-weight: 300;
+		height: 3.05556em;
+		letter-spacing: 0.1em;
+		line-height: 3.05556em;
+		padding: 0 2.5em;
+		text-align: center;
+		text-decoration: none;
+		text-transform: uppercase;
+		white-space: nowrap;
+		color: #fff; /* set text color to white */
+		}
 
 	input[type="submit"]:hover,
 	input[type="reset"]:hover,
 	input[type="button"]:hover,
 	button:hover,
-	.button:hover {
-	box-shadow: inset 0 0 0 2px #34a58e;
-	color: #34a58e !important;
-	}
+		.button:hover {
+		box-shadow: inset 0 0 0 2px #34a58e;
+		color: #34a58e !important;
+		}
 
 	input[type="submit"]:hover:active,
 	input[type="reset"]:hover:active,
 	input[type="button"]:hover:active,
 	button:hover:active,
-	.button:hover:active {
-	background-color: rgba(52, 165, 142, 0.15);
-	color: #34a58e !important;
-	}
+		.button:hover:active {
+		background-color: rgba(52, 165, 142, 0.15);
+		color: #34a58e !important;
+		}
 
 	input[type="submit"].special,
 	input[type="reset"].special,
 	input[type="button"].special,
 	button.special,
-	.button.special {
-	background-color: #36383c; /* set button background color to a monochrome shade */
-	box-shadow: none;
-	}
+		.button.special {
+		background-color: #36383c; /* set button background color to a monochrome shade */
+		box-shadow: none;
+		}
 
 	input[type="submit"].special:hover,
 	input[type="reset"].special:hover,
 	input[type="button"].special:hover,
 	button.special:hover,
-	.button.special:hover {
-	background-color: #27282c; /* set button hover background color to a darker monochrome shade */
-	color: #fff !important;
-	}
+		.button.special:hover {
+		background-color: #27282c; /* set button hover background color to a darker monochrome shade */
+		color: #fff !important;
+		}
 
 	input[type="submit"].special:hover:active,
 	input[type="reset"].special:hover:active,
 	input[type="button"].special:hover:active,
 	button.special:hover:active,
-	.button.special:hover:active {
-	background-color: #1a1a1d; /* set button active background color to a darker monochrome shade */
-	}
+		.button.special:hover:active {
+		background-color: #1a1a1d; /* set button active background color to a darker monochrome shade */
+		}
 
 /* Icon */
 
@@ -1559,5 +1559,5 @@
 	}
 
 		#footer .copyright a {
-			color: inherit;
+			color: #f0f0f0;
 		}
