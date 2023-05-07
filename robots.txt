@@ -1,4 +1,7 @@
 User-agent: *
 Allow: /
 
+User-agent: Applebot         
+Allow: /                               
+
 Sitemap: https://awalkaday.art/sitemap.xml
