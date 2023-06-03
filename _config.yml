@@ -3,21 +3,26 @@ baseurl: "https://awalkaday.art"
 image_fulls_loc: "/images/fulls"
 image_thumbs_loc: "/images/thumbs"
 google_analytics: ""
+
 # UI configs
-title: "WALK&equiv;DAY Visual Arts Gallery"
+title: "awalkaday.art Photography Collection"
 subtitle: "The sun is up and running, everyday, for you. Let's take #awalkaday for a healthier life!"
 author: "2021-2023 Chris-Armel (daqhris)"
 header:
  title: "awalkaday.art"
  subtitle: "by daqhris"
 footer:
- name: "WALK&equiv;DAY Visual Arts Gallery"
- bio: "Discover a world of wonder with the awalkaday.art photography collection, a stunning exhibition showcasing the beauty and serenity of natural landscapes and architectural marvels of Belgium, Europe. The talented artist Chris-Armel (daqhris) created each piece as an homage to the joys of roaming the great outdoors on foot, capturing the splendor and hidden gems that surround us. Immerse yourself in the collection as you embark on a journey of visual exploration that will leave you breathless. Each artwork in this collection is a unique and authenticated NFT on the Ethereum blockchain, offering a way to own a piece of digital art history and support the artist's creative vision."
+ name: "awalkaday.art Photography Collection"
+ bio: "Discover a world of wonder with the awalkaday.art Photography Collection: a stunning exhibition showcasing the beauty of natural landscapes and architectural marvels of Belgium, Europe. 
+ The visual artist, Chris-Armel (daqhris), created each piece as an homage to the joys of roaming the great outdoors on foot, capturing the splendor and hidden gems that surround us. 
+ Immerse yourself in the collection as you embark on a journey of visual exploration that will leave you breathless. 
+ Each artwork is a unique and authenticated NFT on the Ethereum blockchain, offering a way to own a piece of digital photography history and support the artist's creative vision."
 web_design: "Chris-Armel (daqhris)"
 social_urls:
   instagram: "https://www.instagram.com/walk.day"
   github: "https://github.com/awalkaday"
   twitter: "https://twitter.com/awalkadayart"
+  
 # Links conditions
 url: https://awalkaday.art
 enforce_ssl: awalkaday.art
