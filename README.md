@@ -1,12 +1,12 @@
-# WALK≡DAY Visual Arts Gallery
-This is the __code repository__ of a web app mainly built in _JavaScript_ that is used to run a digital art gallery.  
+# awalkaday.art Photography Collection
+This is the __code repository__ of a website, mainly built in _JavaScript_, that is used to host a digital art gallery.  
 
-<img src="https://raw.githubusercontent.com/awalkaday/awalkaday-art/master/assets/icons/awalkaday_art-web_overview.PNG" alt="website overview screenshot">  
+<img src="https://raw.githubusercontent.com/awalkaday/awalkaday-art/master/assets/icons/awalkaday_art-web_overview.png" alt="website overview screenshot">  
 
 ## Highlights
-1. __Easy__ setup and __free__ digital art gallery web app.
-2. __No complex code__ changes required. Just upload your pictures to the repository.
-3. __Responsive & fast__ display for __web and mobile__ devices.
+1. __Easy__ setup and __lightweight__ digital art gallery website.
+2. __No complex code__ changes required. 
+3. __Responsive & Fast__ display for __Web and Mobile__ devices.
 
 ## Quick Start
 If you have basic knowledge about web development and you like photography, then this open-source project may help you setup a web application to showcase all your creations without much effort.  
@@ -29,7 +29,7 @@ The website is set up as a [npm](https://www.npmjs.com) package with [gulp](http
 You can just do the following before you push your images to GitHub:
 
 1. Fork and then clone the project to your computer.
-2. Go inside the project's local folder `$ cd awalkaday-art`.
+2. Go inside the project's local folder `$ cd awalkaday`.
 3. Install all dependencies by running `$ npm install`. This step might take some time while automatically downloading and installing recent versions of [NodeJS](https://nodejs.org/en/), [ImageMagick](https://imagemagick.org/index.php), [Git](https://git-scm.com/), [Python](https://www.python.org/), Build Tools for your IDE like [Node.js for Visual Studio](https://visualstudio.microsoft.com/vs/features/node-js/) and other required dependencies.
 4. Copy all your pictures (if possible in JPG file format, the largest size available, straight from your camera or original files) and put them inside `images` directory.
 5. Run `$ gulp` on the command-line inside the git folder in order to resize the images and to generate thumbnails.
@@ -42,8 +42,8 @@ __Fonts__: [Source Sans 3](https://github.com/awalkaday/awalkaday-art/blob/maste
 __Icons__ made from: [OpenMoji](https://openmoji.org/about/) — Remixed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/legalcode).  
 
 ## Copyrights
-__Code__ License: [European Union Public License 1.2](https://raw.githubusercontent.com/awalkaday/awalkaday-art/master/LICENSE).    
-__Content__ Legal Rights: [Creative Commons Zero License: Public Domain (CC0 1.0)](https://creativecommons.org/publicdomain/zero/1.0/legalcode).  
-__Website__ owner & developer: [Chris-Armel](https://daqhris.com) [(@daqhris)](https://github.com/daqhris).  
+__Code__ Open-source License: [European Union Public License 1.2](https://raw.githubusercontent.com/awalkaday/awalkaday-art/master/LICENSE).    
+__Content__ Legal Rights: [Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)](https://creativecommons.org/licenses/by-nc/4.0/).  
+__Website__ Owner & Developer: [Chris-Armel](https://daqhris.com) [(@daqhris)](https://github.com/daqhris).  
 
 <img src="https://raw.githubusercontent.com/awalkaday/awalkaday-art/master/assets/icons/awalkaday-logo-1x1.png" alt="website logo" width="200" height="200">  
