@@ -170,9 +170,9 @@
 /* Type */
 
 	body, input, select, textarea {
-		color: #f0f0f0;
+		color: white;
 		font-family: "SourceSans", sans-serif;
-		font-size: 1rem;
+		font-size: 1.5rem;
 		font-weight: 300;
 		letter-spacing: normal;
 		line-height: 1.65;
@@ -491,7 +491,7 @@
 				}
 
 				ul.icons li .icon {
-					color: #A0A0A1;
+					color: white;
 				}
 
 					ul.icons li .icon:before {
@@ -1175,7 +1175,7 @@
 						}
 
 						#header nav > ul > li a:hover {
-							color: #ffffff !important;
+							color: inherit !important;
 						}
 
 						#header nav > ul > li a.active {
