@@ -397,7 +397,6 @@
 	button.special,
 		.button.special {
 		background-color: #36383c; /* set button background color to a monochrome shade */
-		box-shadow: none;
 		}
 
 	input[type="submit"].special:hover,
