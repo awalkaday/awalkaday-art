@@ -10,7 +10,7 @@ layout: default
         <h1><a href="https://awalkaday.art"><strong>{{ site.header.title }}</strong> {{ site.header.subtitle }}</a></h1>
         <nav>
             <ul>
-                <li><a href="https://collect.awalkaday.art" class="button" style="padding: 0px 2.5em; margin-right: 1em; background-color: rgb(240, 240, 240); color: rgb(0, 0, 0); box-shadow: rgb(54, 56, 60) 0px 0px 0px 2px inset; cursor: pointer;" onmouseout="this.style.backgroundColor='#F0F0F0'; this.style.color='#000000';" aria-hidden="true" title="Collect artworks from the awalkaday.art Photography Collection" target="_blank" onmouseover="this.style.backgroundColor='#34a58e'; this.style.color='#FFFFFF';">Collect</a></li>
+                <li><a href="https://collect.awalkaday.art" class="button" style="padding: 0px 2.5em; margin-right: 1em; background-color: rgb(240, 240, 240); color: rgb(0, 0, 0); box-shadow: rgb(54, 56, 60) 0px 0px 0px 2px inset; cursor: pointer;" onmouseout="this.style.backgroundColor='#F0F0F0'; this.style.color='#000000';" aria-label="Acquire artworks from the awalkaday.art Collection" title="Collect artworks from the awalkaday.art Photography Collection" target="_blank" onmouseover="this.style.backgroundColor='#34a58e'; this.style.color='#FFFFFF';">Collect</a></li>
                 <li><a href="#footer" class="button special" style="margin-right: 1.25em; padding: 0 2.5em;"aria-hidden="true" title="Find out more about the digital art gallery">About</a></li>
             </ul>
         </nav>
@@ -35,7 +35,7 @@ layout: default
         <div class="inner split">
             <div>
                 <section>
-                    <h2><a href="/" class="icon fa-image" aria-hidden="true"> {{ site.footer.name }}</a></h2>
+                    <h2><a href="/" class="icon fa-image" aria-label="awalkaday.art Photography Collection"> {{ site.footer.name }}</a></h2>
                     <p>{{ site.footer.bio }}</p>
                     <a href="https://about.awalkaday.art/index.html" title="FAQ : About | awalkaday.art" class="button" style="color: black;" target="_blank">Learn More</a>
                     <a href="https://oncyber.io/awalkaday.art" target="_blank" class="button special" style="margin-left: 10px;">3D Exhibition</a>
@@ -46,25 +46,25 @@ layout: default
                     <h4>Contact & Social Media</h4>
                     <ul class="icons">
                             <li>
-                                <a href="mailto:contact@awalkaday.art" class="icon fa-envelope" aria-hidden="true" title="Contact by sending an E-Mail" target="_blank"></a>
+                                <a href="mailto:contact@awalkaday.art" class="icon fa-envelope" aria-label="Reach out by e-mail" title="Contact by sending an E-Mail" target="_blank"></a>
                             </li>
                         {% if site.social_urls.instagram %}
                             <li>
-                                <a href="{{ site.social_urls.instagram }}" class="icon fa-instagram" aria-hidden="true" title="Discover the art project's Instagram feed" target="_blank">
+                                <a href="{{ site.social_urls.instagram }}" class="icon fa-instagram" aria-label="Visual Profile on Instagram" title="Discover the art project's Instagram feed" target="_blank">
                                     <span class="label"></span>
                                 </a>
                             </li>
                         {% endif %}
                         {% if site.social_urls.twitter %}
                         <li>
-                            <a href="{{ site.social_urls.twitter }}" class="icon fa-twitter" aria-hidden="true" title="Subscribe to the gallery's feed on Twitter" target="_blank">
+                            <a href="{{ site.social_urls.twitter }}" class="icon fa-twitter" aria-label="News and project updates on Twitter" title="Subscribe to the gallery's feed on Twitter" target="_blank">
                                 <span class="label"></span>
                             </a>
                         </li>
                         {% endif %}
                         {% if site.social_urls.github %}
                             <li>
-                                <a href="{{ site.social_urls.github }}" class="icon fa-github" aria-hidden="true" title="Visit the tech lab on GitHub" target="_blank">
+                                <a href="{{ site.social_urls.github }}" class="icon fa-github" aria-label="Open-source code repositories on GitHub" title="Visit the tech lab on GitHub" target="_blank">
                                     <span class="label"></span>
                                 </a>
                             </li>
