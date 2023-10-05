@@ -9,7 +9,7 @@ This is the __code repository__ of a website, mainly built in _JavaScript_, that
 3. __Responsive & Fast__ display for __Web and Mobile__ devices.
 
 ## Quick Start
-If you have basic knowledge about web development and you like photography, then this open-source project may help you setup a web application to showcase all your creations without much effort.  
+If you have basic knowledge of web development and you like photography, then this open-source project may help you set up a web application to showcase all your creations without much effort.  
 
 **Follow the steps below and your website will be live in no time:**
 
