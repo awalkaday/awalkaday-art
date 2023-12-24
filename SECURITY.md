@@ -8,6 +8,6 @@ Solutions are __rapidly__ applied in our codebase, web servers or build machines
 
 ## Reporting a Vulnerability
 
-To report a vulnerability, you may send an __encrypted e-mail__ to the [lead developer](https://daqhris.com/contact/).   
+To report a vulnerability, you may send an __encrypted e-mail__ to the [software developer](https://daqhris.com/contact/).   
 Once the issue is fixed, you will be directly notified and thanked.    
 Your contribution to the site safety will be publicly acknowledged.  
