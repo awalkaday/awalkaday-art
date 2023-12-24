@@ -6,18 +6,18 @@ google_analytics: ""
 
 # UI configs
 title: "awalkaday.art Photography Collection"
-subtitle: "The sun is up and running, every day, for you. For a healthier life, let's #awalkaday!"
+subtitle: "The sun is up and running, every day, for you. For a healthier life, let's enjoy #awalkaday!"
 author: "2021-2023 Chris-Armel (daqhris)"
 header:
  title: "awalkaday.art"
  subtitle: "by daqhris"
 footer:
  name: "awalkaday.art Photography Collection"
- bio: "A collection of black-and-white photographs showcasing the beauty of the natural landscapes and architectural wonders of Belgium (Europe). 
- Photographer Chris-Armel (daqhris) created each piece as a tribute to the joys of walking in nature, capturing the magnificence and mysteries that surround us. 
+ bio: "A series of black-and-white photographs showcasing the beauty of natural landscapes and architectural wonders of Belgium (Europe). 
+ Chris-Armel (daqhris) created each piece as a tribute to the joys of walking in nature, capturing the magnificence and mysteries that surround us. 
  Immerse yourself in the collection and embark on a stunning visual journey of exploration. 
  Each photo is uniquely identified and certified by a token on the Ethereum blockchain. 
- The art project's smart contract, named awalkaday.art, was published on the blockchain in February 2023 and allows for the purchase of artwork from the photo collection."
+ This artistic project's smart contract, named awalkaday.art, was published on the blockchain in February 2023 and allows for the purchase of artwork from the photo collection."
 web_design: "Chris-Armel (daqhris)"
 social_urls:
   instagram: "https://www.instagram.com/walk.day"
