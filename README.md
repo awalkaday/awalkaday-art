@@ -25,7 +25,7 @@ Site navigation pointers, such as social media icons, contact methods, external 
 
 <img src="https://raw.githubusercontent.com/awalkaday/awalkaday-art/master/assets/icons/awalkaday_art-web_footer.png" alt="website footer screenshot">  
  
-## Build Instructions
+## Deployment Guide
 The essential tool required to build the website is an [NPM](https://www.npmjs.com) package: [gulp](https://gulpjs.com/) which is used to automate image resizing and thumbnail generation.  
 
 Do the following before you push your images to a remote code repository:
