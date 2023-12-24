@@ -9,18 +9,19 @@ This is the __code repository__ of a website, mainly built in _JavaScript_, that
 3. __Responsive & fast__ display for various devices.
 
 ## Quick Start
-If you have basic knowledge of web development and you like photography, then this open-source project may help you set up a web application to showcase all your creations without much effort.  
+If you have basic knowledge of web development, then this open-source project may help you set up a web application to showcase all your visual creations without much effort.  
 
-**Follow the steps below and your website will be live in no time:**
+**Follow the steps below and your site will be live in no time:**
 
-1. Fork this repo by hitting the `Fork` button at the top right corner.
-2. Enable _Github Pages_ from the repo settings.
-3. Upload your pictures to the `images` directory. (You may do that on github.com itself or you may clone and push the images to your repo.)
-4. Add your own custom domain in the `CNAME` file or just remove the file if you don't own a domain and use the default domain that GitHub provides.
-5. Update the `baseurl` field in the `_config.yml` file with whatever domain you used in step #4.
-6. And that's it, your web application is set. To view, go to [awalkaday.art](https://awalkaday.art) (or whatever you have in the CNAME file) and if you don't have one, you can go to [[yourusername].github.io/awalkaday](https://yourusername.github.io/awalkaday).
+1. Fork this repo by clicking the `Fork` button at the top right corner.
+2. Enable _GitHub Pages_ in the code repository settings.
+3. Upload your pictures to the `images` directory. (You may do that via _github.com_ or clone and push the images to your repo.)
+4. Add your own web domain in the `CNAME` file or just delete the file if you don't own a domain in order to use the default domain that _GitHub_ provides.
+5. Update the `baseurl` field inside `_config.yml` with the web domain used in step #4.
+6. And that's it, your web app is set and ready. To view the results, visit the link configured in the CNAME file. In my case, the web address is [awalkaday.art](https://awalkaday.art).
 
-And, of course, you can modify the words that are shown on the landing page's footer in the `_config.yml` file as well as a few other settings like your social media icons, contact form, etc.  
+It is possible to modify the short site description shown on the front-page's bottom area by editing the `_config.yml` file. 
+A bunch of site navigation settings, e.g.: social media icons, contact methods, external links, license documents, legal statements, ... are located in the footer section. 
 
 <img src="https://raw.githubusercontent.com/awalkaday/awalkaday-art/master/assets/icons/awalkaday_art-web_footer.png" alt="website footer screenshot">  
  
