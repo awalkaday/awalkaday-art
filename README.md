@@ -1,12 +1,12 @@
 # awalkaday.art Photography Collection
-This is the __code repository__ of a website, mainly built in _JavaScript_, that is used to host a digital photography gallery.  
+This is the __code repository__ of a website, mainly built in _JavaScript_, that is used to exhibit a digital photo collection.  
 
 <img src="https://raw.githubusercontent.com/awalkaday/awalkaday-art/master/assets/icons/awalkaday_art-web_overview.png" alt="website overview screenshot">  
 
 ## Highlights
-1. __Easy__ setup and __lightweight__ photo gallery.
+1. __Easy__ setup and __lightweight__ web gallery.
 2. __No complex code__ changes required. 
-3. __Responsive & Fast__ display for __Web and Mobile__ devices.
+3. __Responsive & fast__ display for various devices.
 
 ## Quick Start
 If you have basic knowledge of web development and you like photography, then this open-source project may help you set up a web application to showcase all your creations without much effort.  
