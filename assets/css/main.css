@@ -396,7 +396,8 @@
 	input[type="button"].special,
 	button.special,
 		.button.special {
-		background-color: #36383c; /* set button background color to a monochrome shade */
+		background-color: #fff;
+		color: #36383c;
 		}
 
 	input[type="submit"].special:hover,
@@ -404,8 +405,8 @@
 	input[type="button"].special:hover,
 	button.special:hover,
 		.button.special:hover {
-		background-color: #27282c; /* set button hover background color to a darker monochrome shade */
-		color: #fff !important;
+		background-color: #fff; 
+		color: #27282c;
 		}
 
 	input[type="submit"].special:hover:active,
@@ -413,7 +414,8 @@
 	input[type="button"].special:hover:active,
 	button.special:hover:active,
 		.button.special:hover:active {
-		background-color: #1a1a1d; /* set button active background color to a darker monochrome shade */
+		background-color: #fff;
+		color: #1a1a1d;
 		}
 
 /* Icon */
