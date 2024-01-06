@@ -397,7 +397,7 @@
 	button.special,
 		.button.special {
 		background-color: #fff;
-		color: #36383c;
+		color: #36383c !important;
 		}
 
 	input[type="submit"].special:hover,
@@ -406,7 +406,7 @@
 	button.special:hover,
 		.button.special:hover {
 		background-color: #fff; 
-		color: #27282c;
+		color: #27282c !important;
 		}
 
 	input[type="submit"].special:hover:active,
@@ -415,7 +415,7 @@
 	button.special:hover:active,
 		.button.special:hover:active {
 		background-color: #fff;
-		color: #1a1a1d;
+		color: #1a1a1d !important;
 		}
 
 /* Icon */
