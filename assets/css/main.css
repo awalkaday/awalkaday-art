@@ -370,7 +370,7 @@
 		text-decoration: none;
 		text-transform: uppercase;
 		white-space: nowrap;
-		color: rgb(0, 0, 0); /* set text color to black */
+		color: rgb(0, 0, 0) !important; /* set text color to black */
 		}
 
 	input[type="submit"]:hover,
