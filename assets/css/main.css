@@ -405,7 +405,7 @@
 	button.special:hover,
 		.button.special:hover {
 		background-color: #27282c; /* set button hover background color to a darker monochrome shade */
-		color: #fff;
+		color: #fff !important;
 		}
 
 	input[type="submit"].special:hover:active,
