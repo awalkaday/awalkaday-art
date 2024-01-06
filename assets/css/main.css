@@ -354,7 +354,7 @@
 		-webkit-transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
 		-ms-transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
 		transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
-		background-color: #F0F0F0;
+		background-color: rgb(240, 240, 240);
 		border: 0;
 		border-radius: 0;
 		box-shadow: inset 0 0 0 2px #36383c;
@@ -370,7 +370,7 @@
 		text-decoration: none;
 		text-transform: uppercase;
 		white-space: nowrap;
-		color: #fff; /* set text color to white */
+		color: rgb(0, 0, 0); /* set text color to black */
 		}
 
 	input[type="submit"]:hover,
