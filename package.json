@@ -1,14 +1,14 @@
 {
   "name": "awalkaday",
   "version": "1.0.0",
-  "description": "WALK≡DAY Visual Arts Gallery: black-and-white photography to inspire daily walking habits",
+  "description": "awalkaday.art Photography Collection: black-and-white photographs which inspire daily walking habits.",
   "main": "npmfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/daqhris/awalkaday.git"
+    "url": "git+https://github.com/awalkaday/awalkaday-art.git"
   },
   "keywords": [
     "awalkaday",
@@ -19,10 +19,10 @@
     "black and white images",
     "online art gallery"
   ],
-  "author": "Chris-Armel",
+  "author": "Chris-Armel (daqhris)",
   "license": "EUPL-1.2",
   "bugs": {
-    "url": "https://github.com/daqhris/awalkaday/issues"
+    "url": "https://github.com/awalkaday/awalkaday-art/pulls"
   },
   "homepage": "https://awalkaday.art",
   "devDependencies": {
