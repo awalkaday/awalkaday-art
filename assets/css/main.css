@@ -1450,10 +1450,8 @@
 			-webkit-transition-delay: 0.3s;
 			-ms-transition-delay: 0.3s;
 			transition-delay: 0.3s;
-			height: 10em; /* Adjust height as needed */
-			min-height: 10em; /* Adjust min-height as needed */
 			width: 100%;
-			margin: 5px 0; /* Add margin for visual separation */
+			margin: 1em; /* Add margin for visual separation */
 			}
 		}
 		
@@ -1465,10 +1463,9 @@
 				-webkit-transition-delay: 0.3s;
 				-ms-transition-delay: 0.3s;
 				transition-delay: 0.3s;
-				height: 12em; /* Adjust height as needed */
-				min-height: 12em; /* Adjust min-height as needed */
+				min-height: 10em; /* Adjust min-height as needed */
 				width: 100%;
-				margin: 5px 0; /* Add margin for visual separation */
+				margin: 1em; /* Add margin for visual separation */
 				}
 		}
 		
@@ -1480,10 +1477,9 @@
 				-webkit-transition-delay: 0.3s;
 				-ms-transition-delay: 0.3s;
 				transition-delay: 0.3s;
-				height: 15em; /* Adjust height as needed */
-				min-height: 15em; /* Adjust min-height as needed */
+				min-height: 12em; /* Adjust min-height as needed */
 				width: 100%;
-				margin: 5px 0; /* Add margin for visual separation */
+				margin: 1em; /* Add margin for visual separation */
 				}
 		}
 		
