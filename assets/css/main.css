@@ -1249,8 +1249,6 @@
 			opacity: 1;
 			overflow: hidden;
 			position: relative;
-			width: 50%;
-			padding-bottom: 50%;
 		}
 
 			#main .thumb:after {
@@ -1279,7 +1277,7 @@
 				left: 0;
 				position: absolute;
 				top: 0;
-				width: 75%;
+				width: 80%;
 			}
 
 			#main .thumb > h2 {
