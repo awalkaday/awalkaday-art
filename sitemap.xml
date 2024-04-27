@@ -15,22 +15,7 @@
   <priority>1</priority>
 </url>
 <url>
-  <loc>https://about.awalkaday.art/fr.html</loc>
-      <changefreq>monthly</changefreq>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://about.awalkaday.art/zh.html</loc>
-      <changefreq>monthly</changefreq>
-  <priority>0.64</priority>
-</url>
-<url>
   <loc>https://awalkaday.art/privacy.html</loc>
-      <changefreq>monthly</changefreq>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://beta.awalkaday.art/</loc>
       <changefreq>monthly</changefreq>
   <priority>0.64</priority>
 </url>
