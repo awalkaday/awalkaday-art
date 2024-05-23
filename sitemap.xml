@@ -10,9 +10,9 @@
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://about.awalkaday.art/index.html</loc>
+  <loc>https://about.awalkaday.art</loc>
       <changefreq>monthly</changefreq>
-  <priority>1</priority>
+  <priority>0.80</priority>
 </url>
 <url>
   <loc>https://awalkaday.art/privacy.html</loc>
