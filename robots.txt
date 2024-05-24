@@ -2,6 +2,11 @@ User-agent: *
 Allow: /
 
 User-agent: Applebot         
-Allow: /                               
+Allow: /              
+
+User-agent: ClaudeBot
+User-agent: ClaudeBot/1.0
+User-agent: Claude-Web
+Disallow: /                 
 
 Sitemap: https://awalkaday.art/sitemap.xml
