@@ -4,9 +4,19 @@ Allow: /
 User-agent: Applebot         
 Allow: /              
 
+User-agent: Bytespider  
+User-agent: CCBot  
+User-agent: ClaudeBot  
+User-agent: Diffbot  
+User-agent: FacebookBot  
+User-agent: Google-Extended  
+User-agent: GPTBot  
+User-agent: omgili  
+User-agent: anthropic-ai  
+User-agent: Claude-Web  
+User-agent: cohere-ai  
 User-agent: ClaudeBot
 User-agent: ClaudeBot/1.0
-User-agent: Claude-Web
 Disallow: /                 
 
 Sitemap: https://awalkaday.art/sitemap.xml
