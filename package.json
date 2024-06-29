@@ -31,7 +31,7 @@
   "homepage": "https://awalkaday.art",
   "devDependencies": {
     "del": "^2.2.2",
-    "gulp": "^4.0.2",
+    "gulp": "^5.0.0",
     "gulp-gm": "0.0.9",
     "gulp-image-resize": "^0.13.1",
     "gulp-rename": "^1.4.0",
