@@ -42,25 +42,8 @@ layout: default
                     </section>
 
                     <section>
-                    <h3>Contact &mdash; Social Media &mdash; Source Code &mdash; Online Book &mdash; Photo Store</h3>
+                    <h3>Source Code &mdash; Online Book &mdash; Photo Store</h3>
                     <ul class="icons">
-                            <li>
-                                <a href="mailto:contact@awalkaday.art" class="icon fa-envelope fa-lg" aria-label="Reach out by e-mail" title="Contact by sending an E-Mail" target="_blank"></a>
-                            </li>
-                        {% if site.social_urls.instagram %}
-                            <li>
-                                <a href="{{ site.social_urls.instagram }}" class="icon fa-instagram fa-lg" aria-label="Visual Profile on Instagram" title="Discover the art project's Instagram feed" target="_blank">
-                                    <span class="label"></span>
-                                </a>
-                            </li>
-                        {% endif %}
-                        {% if site.social_urls.twitter %}
-                        <li>
-                            <a href="{{ site.social_urls.twitter }}" class="icon fa-twitter fa-lg" aria-label="News and project updates on Twitter" title="Subscribe to the gallery's feed on Twitter" target="_blank">
-                                <span class="label"></span>
-                            </a>
-                        </li>
-                        {% endif %}
                         {% if site.social_urls.github %}
                             <li>
                                 <a href="{{ site.social_urls.github }}" class="icon fa-github fa-lg" aria-label="Open-source code repositories on GitHub" title="Visit the tech lab on GitHub" target="_blank">
@@ -74,6 +57,26 @@ layout: default
                         <li>
                             <a href="https://collect.awalkaday.art" class="icon fa-shopping-basket fa-lg" aria-label="An online photo store dedicated to awalkaday.art" title="The Collector's Store | awalkaday.art Photo Collection" target="_blank"></a>
                         </li>
+                        </ul>
+                        <h3>Electronic Mail &mdash; Social Media</h3>
+                        <ul class="icons">
+                        <li>
+                            <a href="mailto:contact@awalkaday.art" class="icon fa-envelope fa-lg" aria-label="Reach out by e-mail" title="Contact by sending an E-Mail" target="_blank"></a>
+                        </li>
+                    {% if site.social_urls.instagram %}
+                        <li>
+                            <a href="{{ site.social_urls.instagram }}" class="icon fa-instagram fa-lg" aria-label="Visual Profile on Instagram" title="Discover the art project's Instagram feed" target="_blank">
+                                <span class="label"></span>
+                            </a>
+                        </li>
+                    {% endif %}
+                    {% if site.social_urls.twitter %}
+                        <li>
+                            <a href="{{ site.social_urls.twitter }}" class="icon fa-twitter fa-lg" aria-label="News and project updates on Twitter" title="Subscribe to the gallery's feed on Twitter" target="_blank">
+                                <span class="label"></span>
+                            </a>
+                        </li>
+                    {% endif %}
                     </ul>
                 </section>
 
