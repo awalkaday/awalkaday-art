@@ -17,7 +17,7 @@ Follow the steps below and your site will be live in no time:
 2. Enable _GitHub Pages_ in the code repository settings.
 3. Upload your pictures to the `images` directory. (You may do that via _GitHub.com_ or clone/push the images to your repo.)
 4. Add your own web domain in the `CNAME` file or just delete the file if you don't own a domain in order to use the default domain that _GitHub_ provides.
-5. Update the `baseurl` field inside `_config.yml` with the web domain used in step #4.
+5. Leave `baseurl` empty in `_config.yml` (the site is served from the root of your domain) and set `url` to your domain.
 6. And that's it, your web app is set and ready. To view the results, visit the link configured in the CNAME file. In this particular case, the web address is [awalkaday.art](https://awalkaday.art).
 
 It is possible to modify the short site description shown on the front-page's bottom area by editing the `_config.yml` file.  
@@ -26,16 +26,26 @@ Site navigation pointers, such as social media icons, contact methods, external 
 <img src="https://raw.githubusercontent.com/awalkaday/awalkaday-art/master/assets/icons/awalkaday_art-web_footer.png" alt="website footer screenshot">  
  
 ## Deployment Guide
-The essential tool required to build the website is an [NPM](https://www.npmjs.com) package: [gulp](https://gulpjs.com/) which is used to automate image resizing and thumbnail generation.  
+The site is a [Jekyll](https://jekyllrb.com/) project published with _GitHub Pages_. The only build tool you need is [Node.js](https://nodejs.org/) (version 20 or newer), used to resize photographs with [sharp](https://sharp.pixelplumbing.com/).  
 
 Do the following before you push your images to a remote code repository:
 
-1. Fork and then, clone the project to your computer.
-2. Go inside the project's root folder `$ cd awalkaday`.
-3. Install all Node Package Manager (npm) dependencies by running `$ npm install`. This step will take some time required to download and install recent versions of [NodeJS](https://nodejs.org/en/), [ImageMagick](https://imagemagick.org/index.php), [Git](https://git-scm.com/), [Python](https://www.python.org/), Build Tools for your IDE like [Node.js for Visual Studio](https://visualstudio.microsoft.com/vs/features/node-js/) and other specified dependencies.
-4. Copy all your photographs (if possible: in JPG file format, of the largest size available, straight from your camera memory card) and place them inside the `images` directory.
-5. Run `$ gulp` on the command line inside the _git_ folder in order to resize the images and generate thumbnails.
-6. Add your local code changes to a remote server by using `$ git add --all` then, follow up with a [signed commit](https://docs.github.com/en/github/authenticating-to-github/managing-commit-signature-verification/signing-commits) `$ git commit -S -m "a short and descriptive commit message"` and lastly, update your remote code repo with the command `$ git push origin master`.  
+1. Fork and then, clone the project to your computer, and go inside the project's root folder.
+2. Install the single dependency with `$ npm install`.
+3. Copy your photographs (if possible: in JPG file format, of the largest size available, straight from your camera memory card) inside the `images` directory.
+4. Run `$ npm run images` to create the 1024 px version (`images/fulls`) and the 512 px thumbnail (`images/thumbs`) of every photograph. Metadata, including GPS position, is removed. Your originals are kept; add `-- --delete-originals` if you prefer them removed once resized.
+5. Add your local code changes to a remote server by using `$ git add --all` then, follow up with a [signed commit](https://docs.github.com/en/github/authenticating-to-github/managing-commit-signature-verification/signing-commits) `$ git commit -S -m "a short and descriptive commit message"` and lastly, update your remote code repo with the command `$ git push origin master`.  
+
+To preview the site locally: `$ bundle install` then `$ bundle exec jekyll serve` and open <http://localhost:4000>.
+
+### Optional details for each photograph
+Create entries in [`_data/photos.yml`](_data/photos.yml) to give a photograph a title, a description for screen readers, or a link to its token on the Ethereum blockchain. The key is the first 8 characters of the file name. Photographs without an entry still display normally.
+
+### Where things are
+- `index.html` — page markup and the small inline script that randomises order and crop on every visit.
+- `assets/js/gallery.js` — photograph viewer and About panel (no dependencies).
+- `assets/css/gallery.css` — photo grid and viewer styles. `assets/css/main.min.css` still holds the Multiverse base styles (header, footer, typography).
+- `docs/AUDIT.md` and `docs/ROADMAP.md` — findings and the plan for the next renovation steps.
 
 ## Credits
 __Forked__ from: [rampatra/photography](https://github.com/rampatra/photography) — Enhanced for [Jekyll](https://jekyllrb.com/) by [Ram  Patra](https://github.com/rampatra) — Code reused under [GPL-3.0 License](https://raw.githubusercontent.com/rampatra/photography/master/LICENSE).   

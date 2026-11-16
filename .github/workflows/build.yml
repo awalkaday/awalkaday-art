@@ -1,0 +1,33 @@
+name: Build check
+
+# Verifies that the site still builds and that every photograph has its
+# thumbnail. Deployment is untouched: GitHub Pages keeps publishing from the
+# branch configured in the repository settings.
+on:
+  pull_request:
+  push:
+    branches: [master]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Every photograph has a thumbnail (and the reverse)
+        run: diff <(ls images/fulls) <(ls images/thumbs)
+
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.3'
+          bundler-cache: true
+
+      - name: Build the site
+        run: bundle exec jekyll build
+
+      - name: One tile per photograph
+        run: |
+          expected=$(ls images/fulls | wc -l)
+          actual=$(grep -o 'class="tile"' _site/index.html | wc -l)
+          echo "photos: $expected, tiles: $actual"
+          test "$expected" -eq "$actual"
