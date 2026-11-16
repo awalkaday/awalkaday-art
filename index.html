@@ -16,18 +16,48 @@ layout: default
     </header>
 
     <!-- Main -->
-    <div id="main">
-        {% for image in site.static_files %}
-        {% if image.path contains 'fulls' %}
-        <article class="thumb">
-            <a href="{{ site.baseurl }}{{ site.image_fulls_loc }}/{{ image.name }}" class="image">
-                <img src="{{ site.baseurl }}{{ site.image_thumbs_loc }}/{{ image.name }}" alt=""/></a>
-            <!--<h2></h2>
-            <p></p>-->
+    {%- comment -%}
+      One tile per file in images/fulls/ (thumbnails of the same name live in images/thumbs/).
+      Optional per-photo details (title, alt text, Ethereum token link) can be added in
+      _data/photos.yml, keyed by the first 8 characters of the file name. See docs/ROADMAP.md.
+    {%- endcomment -%}
+    {%- assign photos = site.static_files | where_exp: "f", "f.path contains '/images/fulls/'" | sort: "name" -%}
+    <main id="main">
+        {%- for photo in photos %}
+        {%- assign pid = photo.basename | slice: 0, 8 -%}
+        {%- assign meta = site.data.photos[pid] -%}
+        <article class="tile">
+            <a href="{{ site.image_fulls_loc | append: '/' | append: photo.name | relative_url }}"
+               data-id="{{ pid }}"
+               {%- if meta.title %} data-title="{{ meta.title | escape }}"{% endif -%}
+               {%- if meta.chain %} data-chain="{{ meta.chain }}"{% endif %}>
+                <img src="{{ site.image_thumbs_loc | append: '/' | append: photo.name | relative_url }}"
+                     srcset="{{ site.image_thumbs_loc | append: '/' | append: photo.name | relative_url }} 512w,
+                             {{ site.image_fulls_loc | append: '/' | append: photo.name | relative_url }} 1024w"
+                     sizes="(max-width: 600px) 50vw, (max-width: 1100px) 25vw, min(20vw, 26rem)"
+                     width="512" height="512" loading="lazy" decoding="async"
+                     alt="{{ meta.alt | default: 'Black-and-white photograph from the awalkaday.art collection' | escape }}">
+            </a>
         </article>
-        {% endif %}
-        {% endfor %}
-    </div>
+        {%- endfor %}
+    </main>
+    <script>
+    /* Random order + random crop on every visit (intentional, see "Web Gallery" in the artist's book).
+       Runs before the browser decides which lazy images to fetch, so only visible tiles are downloaded. */
+    (function () {
+      var d = document, m = d.getElementById('main');
+      d.documentElement.className += ' js';
+      if (!m) return;
+      var t = Array.prototype.slice.call(m.children), i, j, x, f = d.createDocumentFragment();
+      for (i = t.length - 1; i > 0; i--) { j = Math.floor(Math.random() * (i + 1)); x = t[i]; t[i] = t[j]; t[j] = x; }
+      t.forEach(function (el) {
+        var img = el.querySelector('img');
+        if (img) img.style.objectPosition = Math.floor(Math.random() * 101) + '% ' + Math.floor(Math.random() * 101) + '%';
+        f.appendChild(el);
+      });
+      m.appendChild(f);
+    })();
+    </script>
 
     <!-- Footer -->
     <footer id="footer" class="panel">

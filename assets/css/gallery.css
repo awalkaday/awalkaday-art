@@ -1,0 +1,168 @@
+/*
+ * awalkaday.art — gallery grid + photograph viewer.
+ *
+ * Loaded after main.min.css (Multiverse by HTML5 UP: header, footer panel,
+ * typography, buttons) and only replaces what concerns the photo grid and
+ * the viewer. The old .thumb / .poptrox-popup rules in main.min.css are no
+ * longer used.
+ */
+
+:root {
+  /* Smallest a tile may get. ~5 columns on a laptop, 2 on a phone,
+     and more (not blurrier) columns on very wide screens. */
+  --tile-min: clamp(10.5rem, 19.5vw, 26rem);
+  --tile-ratio: 4 / 3;               /* landscape tiles, as in the original layout */
+  --tile-bg: #d9dad6;                /* placeholder while a photograph loads */
+  --accent: #34a58e;
+}
+
+/* ---------- Grid ---------- */
+
+#main {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(var(--tile-min), 1fr));
+  position: relative;
+}
+
+#main .tile {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: var(--tile-ratio);
+  background: var(--tile-bg);
+}
+
+#main .tile > a {
+  position: absolute;
+  inset: 0;
+  display: block;
+  border: 0;
+  cursor: zoom-in;
+  -webkit-tap-highlight-color: transparent;
+}
+
+#main .tile img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;               /* crop position is randomised per visit by the inline script */
+  transition: opacity 0.6s ease-in-out;
+}
+
+/* Fade-in only when JavaScript is there to reveal the image. */
+.js #main .tile img:not(.is-loaded):not(.is-error) { opacity: 0; }
+
+#main .tile > a:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: -3px;
+}
+
+/* The grid is blurred behind the About panel (rule lives in main.min.css) —
+   keep that cheap on a long page. */
+body.content-active #main { will-change: filter; }
+
+/* ---------- Viewer ---------- */
+
+dialog.lightbox {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  max-height: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: #111;
+  overflow: hidden;
+}
+
+dialog.lightbox[open] {
+  display: grid;
+  place-items: center;
+}
+
+dialog.lightbox::backdrop {
+  background: rgba(255, 255, 255, 0.92);
+}
+
+.lightbox-figure {
+  margin: 0;
+  display: grid;
+  justify-items: center;
+  gap: 0.75rem;
+  max-width: calc(100vw - 2rem);
+  max-height: calc(100vh - 2rem);
+  max-height: calc(100dvh - 2rem);
+}
+
+.lightbox-img {
+  display: block;
+  max-width: calc(100vw - 2rem);
+  max-height: calc(100vh - 6rem);
+  max-height: calc(100dvh - 6rem);
+  width: auto;
+  height: auto;
+  box-shadow: 0 1em 3em 0.5em rgba(0, 0, 0, 0.25);
+  background: var(--tile-bg);
+  transition: opacity 0.3s ease-in-out;
+}
+
+dialog.lightbox.is-loading .lightbox-img { opacity: 0.25; }
+
+.lightbox-caption {
+  min-height: 1.5rem;
+  font-size: 0.85rem;
+  letter-spacing: 0.04em;
+  text-align: center;
+}
+.lightbox-caption[hidden] { display: block; visibility: hidden; }
+.lightbox-title { margin-right: 1em; }
+.lightbox-chain { white-space: nowrap; }
+
+.lightbox-btn {
+  position: absolute;
+  width: 4.5rem;
+  height: 4.5rem;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent center / 3rem no-repeat;
+  cursor: pointer;
+  opacity: 0.55;
+  transition: opacity 0.2s ease-in-out;
+  -webkit-tap-highlight-color: transparent;
+}
+.lightbox-btn:hover,
+.lightbox-btn:focus-visible { opacity: 1; }
+.lightbox-btn:focus-visible { outline: 3px solid var(--accent); outline-offset: -6px; }
+
+.lightbox-close { top: 0; right: 0; background-image: url("images/close.svg"); }
+.lightbox-prev,
+.lightbox-next {
+  top: 50%;
+  margin-top: -2.25rem;
+  background-image: url("images/arrow.svg");
+  background-size: 4rem;
+}
+.lightbox-prev { left: 0; transform: scaleX(-1); }
+.lightbox-next { right: 0; }
+
+@media (max-width: 736px) {
+  .lightbox-btn { width: 3.5rem; height: 3.5rem; background-size: 2.5rem; margin-top: 0; }
+  .lightbox-prev, .lightbox-next { top: auto; bottom: 0.5rem; margin-top: 0; }
+  .lightbox-prev { left: 0.5rem; }
+  .lightbox-next { right: 0.5rem; }
+  .lightbox-img { max-height: calc(100vh - 9rem); max-height: calc(100dvh - 9rem); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #main .tile img, .lightbox-img, .lightbox-btn { transition: none; }
+}
+
+/* No JavaScript: show the About text inline instead of an unreachable off-screen sheet. */
+html:not(.js) .panel {
+  position: static;
+  transform: none;
+  max-height: none;
+}
