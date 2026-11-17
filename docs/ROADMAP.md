@@ -18,8 +18,6 @@ Done in `renovation/gallery-2026` (merged) and `fix/square-tiles` (merged), in s
 - [x] GitHub Actions build check, Dependabot (P3-2); inert security meta tags removed (P3-5)
 - [x] `_data/photos.yml` hook for per-photo title, alt text and Ethereum link
 
-**Still to do for phase 1:** confirm the live footer date (AUDIT.md, "Post-merge check") and take real-browser measurements of the live site.
-
 ## Phase 2 — Image weight (biggest remaining win)
 
 Today a visitor who scrolls through everything downloads up to ~73 MB. A trial re-encode (JPEG q82 + mozjpeg) shows 15.3 → 4.9 MB for thumbnails and 58 → 16 MB for the 1024 px files.
@@ -53,10 +51,3 @@ Ordered by value for effort:
 7. **Reduced motion and dark/light:** respect `prefers-reduced-motion` (done for the new CSS) and optionally `prefers-color-scheme`.
 8. **Print/book bridge:** link each photo to the passage of the online book (printlab.awalkaday.art) that mentions it, using the same data file.
 
-## Open questions for you
-
-1. The site says 263 photographs but the repository holds 261 — which two are missing from the gallery, and should they be added?
-2. Are your original, full-size files still available (needed for phase 2)?
-3. Should the About panel keep its stacked layout on desktop, or use the two-column layout the theme intended?
-4. Is `awalkaday.art` the only canonical host (the privacy page still says `beta.awalkaday.art`)?
-5. Two columns on phones (new) instead of one very large tile — keep, or go back to one? It is one CSS value (`--tile-min`, in `assets/css/gallery.css`).
