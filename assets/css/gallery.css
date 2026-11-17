@@ -9,9 +9,9 @@
 
 :root {
   /* Smallest a tile may get. ~5 columns on a laptop, 2 on a phone,
-     and more (not blurrier) columns on very wide screens. */
+     and more (not blurrier) columns on very wide screens. Tiles are always square. */
   --tile-min: clamp(10.5rem, 19.5vw, 26rem);
-  --tile-ratio: 4 / 3;               /* landscape tiles, as in the original layout */
+  --tile-ratio: 1 / 1;               /* thumbnails are 512x512 squares: show them uncropped */
   --tile-bg: #d9dad6;                /* placeholder while a photograph loads */
   --accent: #34a58e;
 }
