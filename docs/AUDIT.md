@@ -26,7 +26,7 @@ Weight today: `images/fulls` 58 MB (261 files, ~1024 px) + `images/thumbs` 15 MB
 
 | # | Finding | Evidence | Status |
 |---|---------|----------|--------|
-| P2-1 | **Tile shape follows window height**, not the photograph: `height: calc(28.57vh - 1.33em)` with `min-height: 18em`, at a fixed 20 % width. Short or wide windows give wide strips; windows around 981–1200 px give tall slivers about 200–240 px wide. | shipped `main.min.css` | verified from CSS · **fixed** (fixed 4:3 ratio, columns adapt) |
+| P2-1 | **Tile shape follows window height**, not the photograph: `height: calc(28.57vh - 1.33em)` with `min-height: 18em`, at a fixed 20 % width. Short or wide windows give wide strips; windows around 981–1200 px give tall slivers about 200–240 px wide. | shipped `main.min.css` | verified from CSS · **fixed** (fixed square tiles, columns adapt) |
 | P2-2 | **Blurry photos on large screens and tablets.** Tiles can be 700+ px wide on 4K screens, and a single full-width column from 980 px down shows 512 px thumbnails stretched to 980 px. | shipped `main.min.css` (`width:100%` at ≤980 px) | inferred · **fixed** (`srcset`/`sizes`, more columns on wide screens) |
 | P2-3 | **A single jump from 5 columns to 1 at 980 px**, nothing in between. | shipped `main.min.css` | verified · **fixed** (continuous auto-fill grid; 2 columns on phones) |
 | P2-4 | **`100vh` on phones** changes when the address bar hides, resizing every tile mid-scroll. | shipped `main.min.css` | inferred · **fixed** (no viewport-height tile sizing) |
