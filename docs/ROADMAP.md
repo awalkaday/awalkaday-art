@@ -4,20 +4,21 @@ Principles: keep the visual identity (edge-to-edge black-and-white tiles, dark h
 
 Findings and evidence are in [`AUDIT.md`](AUDIT.md).
 
-## Phase 1 — Foundations (this branch)
+## Phase 1 — Foundations (merged: #15, follow-up #18)
 
-Done in `renovation/gallery-2026`, in separate commits so each can be cherry-picked or reverted:
+Done in `renovation/gallery-2026` (merged) and `fix/square-tiles` (merged), in separate commits:
 
 - [x] Lazy-loaded responsive grid; page visible immediately (P1-1, P1-2, P2-1…P2-4)
 - [x] jQuery, skel.js, poptrox and Multiverse `main.js` replaced by one dependency-free script (10 KB, 3 KB gzipped, replacing about 110 KB of libraries that were each loaded twice); scripts no longer loaded twice (P1-3, P3-6)
 - [x] Photograph viewer: keyboard, swipe, focus return, shareable link per photograph (`/#photo-9e4d2608`)
-- [x] Random order and crop preserved, with an unbiased shuffle and crop on both axes (P2-5)
+- [x] Random order preserved with an unbiased shuffle. With square tiles the random crop has no visible effect (a slight random zoom would bring variation back, at the cost of cutting into the white mat)
+- [x] Tiles square again (#18); the footer "Latest Update" date fills in at build time (live value still to be confirmed, see AUDIT.md)
 - [x] Accessibility basics (P3-4); relative URLs for local preview (P3-8)
 - [x] `npm run images` (sharp) replaces the broken gulp pipeline; keeps originals, strips GPS (P3-1)
 - [x] GitHub Actions build check, Dependabot (P3-2); inert security meta tags removed (P3-5)
 - [x] `_data/photos.yml` hook for per-photo title, alt text and Ethereum link
 
-**Before merging:** preview the branch at several window sizes (see AUDIT.md "How to review").
+**Still to do for phase 1:** confirm the live footer date (AUDIT.md, "Post-merge check") and take real-browser measurements of the live site.
 
 ## Phase 2 — Image weight (biggest remaining win)
 
