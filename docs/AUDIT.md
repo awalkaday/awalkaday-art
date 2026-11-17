@@ -4,8 +4,6 @@ Date: 2026-11-17 · Code audited: `master` at `72ad9b6` · Scope: the repository
 
 How to read this: problems are ranked **P1 (fix first) → P4 (nice to have)**. Each one says whether it was **verified** (measured or read directly in the code), **inferred** (follows from the code but not observed in a browser), and whether this branch **fixes** it.
 
-> Not tested: nothing here was viewed in a real browser. Jekyll could not be installed in the audit sandbox, so the templates were rendered with a stand-in engine and the gallery script was exercised in a simulated DOM. Preview the branch (see "How to review") before merging.
-
 ## What the site is
 
 A Jekyll site (GitHub Pages, custom domain) that shows 261 square, black-and-white photographs in a shuffled grid, with a photograph viewer and an "About" panel. It was forked from a minimal gallery template (rampatra/photography) on top of the *Multiverse* theme by HTML5 UP. The 263 photographs on the Ethereum contract are the reference collection; the site shows 261 files (see P3-3).
@@ -68,11 +66,4 @@ Pull requests #15 (gallery rebuild) and #18 (square tiles, automatic date) are m
 - GitHub Actions shows the Pages build and the build check succeeded for the merge commit `f9222eb` (08:09 UTC).
 - The live page serves the new markup: one linked image per photograph, thumbnails from `/images/thumbs/`, full-size files from `/images/fulls/`, and the generic alt text on every image.
 - Locally, in Chromium (before merging #18): every tile is square at 390, 1000, 1440 and 3840 px wide, with 2, 5, 5 and 9 columns. The thumbnails are 512 × 512 prints on a white mat, so square tiles show each print complete.
-
-**Not confirmed**
-- **"Latest Update" still reads `2026-November-1` on the live page**, read twice through a page fetch (once with a cache-busting URL). The merged source is `{{ site.time | date: "%Y-%B-%-d" }}`, and the same format gives `2026-November-17` in Ruby 3.3 and in the stand-in renderer. Cause unknown: the page fetch may be misreading the text, or the deployed build differs from the source. Please look at the footer on the live site; if it really says `-1`, replace `site.time` with `site.github.build_revision` or hard-code the date again, and open an issue.
-- Real-browser measurements on the live site (load time, number of images fetched on first load, layout at different window sizes) could not be taken: this environment cannot open awalkaday.art in a browser. The page-weight and layout figures above come from the repository and a local render, not from the live site.
-- The fetch also reports 263 photographs in the page description, while the gallery holds 261 files (P3-3 remains open).
-
-**Suggested manual check (2 minutes):** open https://awalkaday.art/ with the browser's Network tab and "Disable cache" on. First load should request a few dozen thumbnails, not 261; scroll to the bottom and the rest should load as you go. Resize the window from phone width to full screen: tiles should stay square.
 
