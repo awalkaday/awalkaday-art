@@ -1,0 +1,13 @@
+# Optional details for individual photographs. Everything here is optional:
+# a photograph without an entry simply shows without a caption.
+#
+# Key = the first 8 characters of the image file name
+#       (images/fulls/9e4d2608-6c87-4377-a35b-c2164e5fbce1.jpg  ->  9e4d2608)
+#
+# Example (remove the leading "# " to use it):
+#
+# 9e4d2608:
+#   title: "Early morning, Brussels"          # shown under the photograph in the viewer
+#   alt:   "A cobbled street in fog ..."      # description for screen readers and search engines
+#   chain: "https://etherscan.io/nft/0xe31801c2e58b151c3ded2cb29da56147b7f27eb1/1"  # link to the minted token
+{}

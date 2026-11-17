@@ -1,5 +1,5 @@
 # Base configs
-baseurl: "https://awalkaday.art"
+baseurl: ""   # keep empty: the site is served from the root of awalkaday.art (see CNAME) and relative URLs make local preview work
 image_fulls_loc: "/images/fulls"
 image_thumbs_loc: "/images/thumbs"
 google_analytics: ""

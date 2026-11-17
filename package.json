@@ -1,10 +1,11 @@
 {
   "name": "awalkaday-art",
-  "version": "1.0.0",
+  "version": "2.0.0",
+  "private": true,
   "description": "awalkaday.art Photography Collection: black-and-white photographs which inspire regular walking habits.",
-  "main": "npmfile.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "images": "node scripts/process-images.mjs"
   },
   "repository": {
     "type": "git",
@@ -29,15 +30,10 @@
     "url": "https://github.com/awalkaday/awalkaday-art/pulls"
   },
   "homepage": "https://awalkaday.art",
+  "engines": {
+    "node": ">=20"
+  },
   "devDependencies": {
-    "del": "^2.2.2",
-    "gulp": "^5.0.0",
-    "gulp-gm": "0.0.9",
-    "gulp-image-resize": "^0.13.1",
-    "gulp-rename": "^1.4.0",
-    "gulp-sass": "^5.0.0",
-    "gulp-uglify": "^3.0.2",
-    "lodash.template": "^4.18.1",
-    "node-sass": "^9.0.0"
+    "sharp": "^0.34.0"
   }
 }
