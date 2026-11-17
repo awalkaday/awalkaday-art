@@ -4,8 +4,6 @@ Date: 2026-11-17 · Code audited: `master` at `72ad9b6` · Scope: the repository
 
 How to read this: problems are ranked **P1 (fix first) → P4 (nice to have)**. Each one says whether it was **verified** (measured or read directly in the code), **inferred** (follows from the code but not observed in a browser), and whether this branch **fixes** it.
 
-> Not tested: nothing here was viewed in a real browser. Jekyll could not be installed in the audit sandbox, so the templates were rendered with a stand-in engine and the gallery script was exercised in a simulated DOM. Preview the branch (see "How to review") before merging.
-
 ## What the site is
 
 A Jekyll site (GitHub Pages, custom domain) that shows 261 square, black-and-white photographs in a shuffled grid, with a photograph viewer and an "About" panel. It was forked from a minimal gallery template (rampatra/photography) on top of the *Multiverse* theme by HTML5 UP. The 263 photographs on the Ethereum contract are the reference collection; the site shows 261 files (see P3-3).
@@ -26,11 +24,11 @@ Weight today: `images/fulls` 58 MB (261 files, ~1024 px) + `images/thumbs` 15 MB
 
 | # | Finding | Evidence | Status |
 |---|---------|----------|--------|
-| P2-1 | **Tile shape follows window height**, not the photograph: `height: calc(28.57vh - 1.33em)` with `min-height: 18em`, at a fixed 20 % width. Short or wide windows give wide strips; windows around 981–1200 px give tall slivers about 200–240 px wide. | shipped `main.min.css` | verified from CSS · **fixed** (fixed square tiles, columns adapt) |
+| P2-1 | **Tile shape follows window height**, not the photograph: `height: calc(28.57vh - 1.33em)` with `min-height: 18em`, at a fixed 20 % width. Short or wide windows give wide strips; windows around 981–1200 px give tall slivers about 200–240 px wide. | shipped `main.min.css` | verified from CSS · **fixed** (square tiles, 1:1 like the thumbnails; columns adapt) |
 | P2-2 | **Blurry photos on large screens and tablets.** Tiles can be 700+ px wide on 4K screens, and a single full-width column from 980 px down shows 512 px thumbnails stretched to 980 px. | shipped `main.min.css` (`width:100%` at ≤980 px) | inferred · **fixed** (`srcset`/`sizes`, more columns on wide screens) |
 | P2-3 | **A single jump from 5 columns to 1 at 980 px**, nothing in between. | shipped `main.min.css` | verified · **fixed** (continuous auto-fill grid; 2 columns on phones) |
 | P2-4 | **`100vh` on phones** changes when the address bar hides, resizing every tile mid-scroll. | shipped `main.min.css` | inferred · **fixed** (no viewport-height tile sizing) |
-| P2-5 | **The random crop did nothing on landscape tiles.** The old script set a one-value `background-position` (horizontal only), but the tiles were landscape so the crop overflowed vertically. It only had an effect on the portrait slivers above. | old `main.js` | verified · **fixed** (both axes randomised — the intent in the artist's book is kept) |
+| P2-5 | **The random crop did nothing on landscape tiles.** The old script set a one-value `background-position` (horizontal only), but the tiles were landscape so the crop overflowed vertically. It only had an effect on the portrait slivers above. | old `main.js` | verified · **superseded**: tiles are square again (PR #18), so there is nothing left to crop; the random order is kept |
 | P2-6 | **The SCSS source and the CSS that is served have drifted apart.** `main.min.css` (served) has 5 columns and different spacing than `assets/sass` (4 columns), `main.scss` imports a `.ttf` as if it were Sass (does not compile), and `main.css` differs from `main.min.css`. The CSS was edited by hand after the last build. | compile attempt with dart-sass | verified · **worked around** (new `gallery.css`; Roadmap phase 3 retires the SCSS) |
 | P2-7 | `.panel > .inner.split { display: display: display: display: flex }` is invalid, so the footer's two-column layout falls back to stacked blocks on desktop. Possibly unintentional. | `main.min.css` | verified · **not changed** (it would alter how the About panel looks — your call) |
 
@@ -59,3 +57,13 @@ See the Roadmap, phase 4: per-photo pages and share links, "view on Ethereum" li
 2. Open the site at several window sizes (phone width, 1000 px, 1920 px, 4K or browser zoom 50 %), reload a few times (order and crop should change), open a photograph, use ← →, Esc, swipe on a phone, open About.
 3. Open the browser's Network tab: first load should fetch a few dozen thumbnails, not 261.
 4. Visual identity check: header bar, footer sheet, colours and typography were not touched (`main.min.css` is unchanged).
+
+## Post-merge check of the live site (2026-11-17)
+
+Pull requests #15 (gallery rebuild) and #18 (square tiles, automatic date) are merged into `master`.
+
+**Confirmed**
+- GitHub Actions shows the Pages build and the build check succeeded for the merge commit `f9222eb` (08:09 UTC).
+- The live page serves the new markup: one linked image per photograph, thumbnails from `/images/thumbs/`, full-size files from `/images/fulls/`, and the generic alt text on every image.
+- Locally, in Chromium (before merging #18): every tile is square at 390, 1000, 1440 and 3840 px wide, with 2, 5, 5 and 9 columns. The thumbnails are 512 × 512 prints on a white mat, so square tiles show each print complete.
+
